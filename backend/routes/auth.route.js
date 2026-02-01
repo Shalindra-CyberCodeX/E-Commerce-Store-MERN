@@ -12,6 +12,9 @@ router.post('/logout',logout);
 
 router.post('/refresh-token', refreshToken);
 
+router.get("/profile", protectRoute, getProfile);
+
+
 // when eporting as default you can give any name while importing
 
 export default router;
